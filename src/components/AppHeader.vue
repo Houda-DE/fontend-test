@@ -18,6 +18,7 @@ const themeLabel = computed(() =>
     <nav class="main-nav" aria-label="Navigation principale">
       <RouterLink :to="{ name: 'candidatures' }">Candidatures</RouterLink>
       <RouterLink :to="{ name: 'statuts' }">Statuts</RouterLink>
+      <RouterLink :to="{ name: 'postes' }">Postes</RouterLink>
     </nav>
     <div class="topbar-right">
       <span class="workspace">Espace recrutement</span>

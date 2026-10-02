@@ -4,7 +4,6 @@ import CandidaturesPage from '../pages/CandidaturesPage.vue'
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', redirect: '/candidatures' },
     {
       path: '/candidatures',
       name: 'candidatures',
@@ -15,6 +14,12 @@ export const router = createRouter({
       path: '/statuts',
       name: 'statuts',
       component: () => import('../pages/StatutsPage.vue'),
+      meta: { title: 'Pipeline par statut — TalentFlow' }
+    },
+    {
+      path: '/postes',
+      name: 'postes',
+      component: () => import('../pages/PosteView.vue'),
       meta: { title: 'Pipeline par statut — TalentFlow' }
     },
     { path: '/:pathMatch(.*)*', redirect: '/candidatures' }
