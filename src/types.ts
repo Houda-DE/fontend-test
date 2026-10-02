@@ -58,6 +58,8 @@ export interface ListResponse<T> {
   total: number
 }
 
+export type PosteInput = Omit<Poste, 'id'>
+
 /** Query params acceptés par JSON Server sur `/candidatures`. */
 export interface CandidatureQuery {
   q?: string
