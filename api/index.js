@@ -1,6 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-const jsonServer = require('json-server')
+import fs from 'node:fs'
+import path from 'node:path'
+import jsonServer from 'json-server'
 
 const source = path.join(process.cwd(), 'db.json')
 const target = '/tmp/db.json'
@@ -10,4 +10,4 @@ const server = jsonServer.create()
 server.use(jsonServer.defaults({ noCors: false }))
 server.use('/api', jsonServer.router(target))
 
-module.exports = server
+export default server
