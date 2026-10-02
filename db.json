@@ -1,0 +1,386 @@
+{
+  "candidatures": [
+    {
+      "id": 1,
+      "nom": "Sophie Martin",
+      "poste": "Développeur Full Stack",
+      "statut": "En attente",
+      "competences": ["Vue.js", "Node.js", "MongoDB", "Docker"],
+      "experience": "3 ans",
+      "dateCandidature": "2024-01-15T10:30:00Z",
+      "email": "sophie.martin@email.com",
+      "telephone": "+33 6 12 34 56 78",
+      "cv": "https://example.com/cv/sophie-martin.pdf",
+      "lettreMotivation": "Passionnée par le développement web moderne, je souhaite rejoindre votre équipe pour contribuer à des projets innovants.",
+      "salaireSouhaite": 45000,
+      "disponibilite": "Immédiate",
+      "localisation": "Paris, France",
+      "commentaires": []
+    },
+    {
+      "id": 2,
+      "nom": "Thomas Dubois",
+      "poste": "Développeur Frontend",
+      "statut": "Entretien RH",
+      "competences": ["Vue.js", "React", "TypeScript", "Tailwind CSS"],
+      "experience": "2 ans",
+      "dateCandidature": "2024-01-18T14:20:00Z",
+      "email": "thomas.dubois@email.com",
+      "telephone": "+33 6 23 45 67 89",
+      "cv": "https://example.com/cv/thomas-dubois.pdf",
+      "lettreMotivation": "Mon expertise en Vue.js et ma passion pour l'UX/UI font de moi le candidat idéal pour ce poste.",
+      "salaireSouhaite": 38000,
+      "disponibilite": "1 mois",
+      "localisation": "Lyon, France",
+      "commentaires": [
+        {
+          "id": 1,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-20T09:15:00Z",
+          "contenu": "Profil intéressant, à convoquer pour un entretien"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nom": "Emma Leroy",
+      "poste": "Développeur Vue.js",
+      "statut": "Entretien technique",
+      "competences": ["Vue.js", "Nuxt.js", "Pinia", "Jest", "Cypress"],
+      "experience": "4 ans",
+      "dateCandidature": "2024-01-10T08:45:00Z",
+      "email": "emma.leroy@email.com",
+      "telephone": "+33 6 34 56 78 90",
+      "cv": "https://example.com/cv/emma-leroy.pdf",
+      "lettreMotivation": "Avec 4 ans d'expérience sur Vue.js, je suis prête à relever de nouveaux défis techniques.",
+      "salaireSouhaite": 50000,
+      "disponibilite": "2 semaines",
+      "localisation": "Bordeaux, France",
+      "commentaires": [
+        {
+          "id": 2,
+          "auteur": "Pierre Tech Lead",
+          "date": "2024-01-22T11:30:00Z",
+          "contenu": "Excellentes compétences techniques. Test technique réussi avec brio."
+        },
+        {
+          "id": 3,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-23T14:00:00Z",
+          "contenu": "À faire passer en entretien final avec le CTO"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nom": "Lucas Bernard",
+      "poste": "Développeur Backend",
+      "statut": "Refusé",
+      "competences": ["PHP", "Laravel", "MySQL"],
+      "experience": "1 an",
+      "dateCandidature": "2024-01-12T16:00:00Z",
+      "email": "lucas.bernard@email.com",
+      "telephone": "+33 6 45 67 89 01",
+      "cv": "https://example.com/cv/lucas-bernard.pdf",
+      "lettreMotivation": "Junior motivé cherchant à développer ses compétences backend.",
+      "salaireSouhaite": 32000,
+      "disponibilite": "Immédiate",
+      "localisation": "Toulouse, France",
+      "commentaires": [
+        {
+          "id": 4,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-14T10:00:00Z",
+          "contenu": "Profil ne correspond pas aux compétences requises pour le poste"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nom": "Camille Petit",
+      "poste": "Développeur Full Stack",
+      "statut": "Accepté",
+      "competences": ["Vue.js", "Express.js", "PostgreSQL", "AWS", "Docker"],
+      "experience": "5 ans",
+      "dateCandidature": "2024-01-05T09:00:00Z",
+      "email": "camille.petit@email.com",
+      "telephone": "+33 6 56 78 90 12",
+      "cv": "https://example.com/cv/camille-petit.pdf",
+      "lettreMotivation": "Développeuse senior passionnée par les architectures scalables et les bonnes pratiques de développement.",
+      "salaireSouhaite": 55000,
+      "disponibilite": "1 mois",
+      "localisation": "Nantes, France",
+      "commentaires": [
+        {
+          "id": 5,
+          "auteur": "Pierre Tech Lead",
+          "date": "2024-01-08T15:00:00Z",
+          "contenu": "Profil exceptionnel, très solide techniquement"
+        },
+        {
+          "id": 6,
+          "auteur": "CTO",
+          "date": "2024-01-10T16:30:00Z",
+          "contenu": "Offre envoyée - 55K + télétravail 3j/semaine"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nom": "Antoine Moreau",
+      "poste": "Développeur Frontend",
+      "statut": "En attente",
+      "competences": ["React", "Vue.js", "JavaScript", "CSS"],
+      "experience": "1.5 ans",
+      "dateCandidature": "2024-01-20T11:15:00Z",
+      "email": "antoine.moreau@email.com",
+      "telephone": "+33 6 67 89 01 23",
+      "cv": "https://example.com/cv/antoine-moreau.pdf",
+      "lettreMotivation": "Jeune développeur passionné cherchant à approfondir ses connaissances en Vue.js.",
+      "salaireSouhaite": 35000,
+      "disponibilite": "Immédiate",
+      "localisation": "Lille, France",
+      "commentaires": []
+    },
+    {
+      "id": 7,
+      "nom": "Julie Girard",
+      "poste": "Développeur Vue.js",
+      "statut": "Entretien RH",
+      "competences": ["Vue.js", "Vuex", "TypeScript", "Vite"],
+      "experience": "3 ans",
+      "dateCandidature": "2024-01-17T13:30:00Z",
+      "email": "julie.girard@email.com",
+      "telephone": "+33 6 78 90 12 34",
+      "cv": "https://example.com/cv/julie-girard.pdf",
+      "lettreMotivation": "Spécialisée en Vue.js, je recherche un environnement stimulant pour continuer à progresser.",
+      "salaireSouhaite": 42000,
+      "disponibilite": "3 semaines",
+      "localisation": "Marseille, France",
+      "commentaires": [
+        {
+          "id": 7,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-19T10:00:00Z",
+          "contenu": "Bon premier contact téléphonique. Entretien RH planifié pour le 25/01"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nom": "Alexandre Roux",
+      "poste": "Développeur Full Stack",
+      "statut": "En attente",
+      "competences": ["Vue.js", "Node.js", "GraphQL", "MongoDB"],
+      "experience": "2.5 ans",
+      "dateCandidature": "2024-01-22T15:45:00Z",
+      "email": "alexandre.roux@email.com",
+      "telephone": "+33 6 89 01 23 45",
+      "cv": "https://example.com/cv/alexandre-roux.pdf",
+      "lettreMotivation": "Passionné par les technologies modernes, je souhaite contribuer à des projets ambitieux.",
+      "salaireSouhaite": 40000,
+      "disponibilite": "2 mois",
+      "localisation": "Strasbourg, France",
+      "commentaires": []
+    },
+    {
+      "id": 9,
+      "nom": "Léa Fontaine",
+      "poste": "Développeur Frontend",
+      "statut": "Entretien technique",
+      "competences": ["Vue.js", "Nuxt.js", "SASS", "Figma", "Storybook"],
+      "experience": "3.5 ans",
+      "dateCandidature": "2024-01-14T10:20:00Z",
+      "email": "lea.fontaine@email.com",
+      "telephone": "+33 6 90 12 34 56",
+      "cv": "https://example.com/cv/lea-fontaine.pdf",
+      "lettreMotivation": "Frontend developer avec un fort intérêt pour le design et l'expérience utilisateur.",
+      "salaireSouhaite": 44000,
+      "disponibilite": "1 mois",
+      "localisation": "Rennes, France",
+      "commentaires": [
+        {
+          "id": 8,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-16T14:30:00Z",
+          "contenu": "Profil très prometteur, bonne communication"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nom": "Hugo Lambert",
+      "poste": "Développeur Vue.js",
+      "statut": "Refusé",
+      "competences": ["Vue.js", "JavaScript"],
+      "experience": "6 mois",
+      "dateCandidature": "2024-01-19T09:30:00Z",
+      "email": "hugo.lambert@email.com",
+      "telephone": "+33 6 01 23 45 67",
+      "cv": "https://example.com/cv/hugo-lambert.pdf",
+      "lettreMotivation": "Récemment diplômé, je suis motivé pour apprendre et progresser.",
+      "salaireSouhaite": 28000,
+      "disponibilite": "Immédiate",
+      "localisation": "Nice, France",
+      "commentaires": [
+        {
+          "id": 9,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-21T11:00:00Z",
+          "contenu": "Manque d'expérience pour le poste. Profil trop junior."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nom": "Chloé Blanchard",
+      "poste": "Développeur Full Stack",
+      "statut": "En attente",
+      "competences": ["Vue.js", "Python", "Django", "PostgreSQL"],
+      "experience": "4 ans",
+      "dateCandidature": "2024-01-23T08:00:00Z",
+      "email": "chloe.blanchard@email.com",
+      "telephone": "+33 6 12 23 34 45",
+      "cv": "https://example.com/cv/chloe-blanchard.pdf",
+      "lettreMotivation": "Développeuse polyvalente cherchant de nouveaux défis techniques.",
+      "salaireSouhaite": 48000,
+      "disponibilite": "2 semaines",
+      "localisation": "Montpellier, France",
+      "commentaires": []
+    },
+    {
+      "id": 12,
+      "nom": "Maxime Garnier",
+      "poste": "Développeur Frontend",
+      "statut": "Entretien RH",
+      "competences": ["Vue.js", "React", "Angular", "TypeScript", "TailwindCSS"],
+      "experience": "5 ans",
+      "dateCandidature": "2024-01-11T14:00:00Z",
+      "email": "maxime.garnier@email.com",
+      "telephone": "+33 6 23 34 45 56",
+      "cv": "https://example.com/cv/maxime-garnier.pdf",
+      "lettreMotivation": "Expert frontend avec une solide expérience sur plusieurs frameworks.",
+      "salaireSouhaite": 52000,
+      "disponibilite": "1 mois",
+      "localisation": "Paris, France",
+      "commentaires": [
+        {
+          "id": 10,
+          "auteur": "Marie Recruteuse",
+          "date": "2024-01-13T09:30:00Z",
+          "contenu": "Profil très intéressant, excellente maîtrise de Vue.js"
+        }
+      ]
+    }
+  ],
+  "statuts": [
+    {
+      "id": 1,
+      "nom": "En attente",
+      "couleur": "#94a3b8",
+      "ordre": 1
+    },
+    {
+      "id": 2,
+      "nom": "Entretien RH",
+      "couleur": "#3b82f6",
+      "ordre": 2
+    },
+    {
+      "id": 3,
+      "nom": "Entretien technique",
+      "couleur": "#f59e0b",
+      "ordre": 3
+    },
+    {
+      "id": 4,
+      "nom": "Accepté",
+      "couleur": "#10b981",
+      "ordre": 4
+    },
+    {
+      "id": 5,
+      "nom": "Refusé",
+      "couleur": "#ef4444",
+      "ordre": 5
+    }
+  ],
+  "postes": [
+    {
+      "id": 1,
+      "titre": "Développeur Vue.js",
+      "description": "Poste orienté frontend avec expertise Vue.js",
+      "competencesRequises": ["Vue.js", "TypeScript", "Pinia"]
+    },
+    {
+      "id": 2,
+      "titre": "Développeur Frontend",
+      "description": "Développeur frontend polyvalent",
+      "competencesRequises": ["Vue.js", "React", "CSS"]
+    },
+    {
+      "id": 3,
+      "titre": "Développeur Full Stack",
+      "description": "Développeur capable de travailler frontend et backend",
+      "competencesRequises": ["Vue.js", "Node.js", "Base de données"]
+    },
+    {
+      "id": 4,
+      "titre": "Développeur Backend",
+      "description": "Spécialiste backend et APIs",
+      "competencesRequises": ["Node.js", "Express", "PostgreSQL"]
+    }
+  ],
+  "competences": [
+    {
+      "id": 1,
+      "nom": "Vue.js",
+      "categorie": "Frontend"
+    },
+    {
+      "id": 2,
+      "nom": "React",
+      "categorie": "Frontend"
+    },
+    {
+      "id": 3,
+      "nom": "TypeScript",
+      "categorie": "Langage"
+    },
+    {
+      "id": 4,
+      "nom": "Node.js",
+      "categorie": "Backend"
+    },
+    {
+      "id": 5,
+      "nom": "Pinia",
+      "categorie": "State Management"
+    },
+    {
+      "id": 6,
+      "nom": "Nuxt.js",
+      "categorie": "Framework"
+    },
+    {
+      "id": 7,
+      "nom": "MongoDB",
+      "categorie": "Base de données"
+    },
+    {
+      "id": 8,
+      "nom": "PostgreSQL",
+      "categorie": "Base de données"
+    },
+    {
+      "id": 9,
+      "nom": "Docker",
+      "categorie": "DevOps"
+    },
+    {
+      "id": 10,
+      "nom": "TailwindCSS",
+      "categorie": "CSS Framework"
+    }
+  ]
+}
