@@ -5,6 +5,12 @@ export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/',
+      name: 'home',
+      component: () => import('../pages/HomePage.vue'),
+      meta: { title: 'Vite + Vue' }
+    },
+    {
       path: '/candidatures',
       name: 'candidatures',
       component: CandidaturesPage,

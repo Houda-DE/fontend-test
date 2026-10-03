@@ -58,6 +58,17 @@ export interface ListResponse<T> {
   total: number
 }
 
+export interface AppNotification {
+  id: number
+  utilisateur: string
+  type: 'nouvelle-candidature' | 'nouveau-poste' | 'statut-mis-a-jour'
+  message: string
+  date: string
+  lue: boolean
+}
+
+export type AppNotificationInput = Omit<AppNotification, 'id'>
+
 export type PosteInput = Omit<Poste, 'id'>
 
 /** Query params acceptés par JSON Server sur `/candidatures`. */

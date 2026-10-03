@@ -101,7 +101,7 @@ html[data-theme='dark'] {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); }
+body { margin: 0; background: var(--bg); padding-bottom: 64px; }
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: not-allowed; opacity: 0.55; }
@@ -185,7 +185,7 @@ main { min-height: 100vh; }
   padding: 10px; color: var(--text); min-width: 0; height: 42px;
 }
 .search { position: relative; }
-.search span { position: absolute; left: 11px; top: 29px; font-size: 20px; color: var(--text-faint); }
+.search span { position: absolute; left: 11px; top: 50%; transform: translateY(-55%); font-size: 20px; line-height: 1; color: var(--text-faint); pointer-events: none; }
 .search input { padding-left: 34px; width: 100%; }
 .clear {
   border: 0; background: transparent; color: var(--primary);

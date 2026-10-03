@@ -1,4 +1,6 @@
 import type {
+  AppNotification,
+  AppNotificationInput,
   Candidature,
   CandidatureInput,
   CandidatureQuery,
@@ -144,5 +146,18 @@ export const api = {
 
   getCompetences(options?: SendOptions): Promise<Competence[]> {
     return request<Competence[]>('/competences', options)
+  },
+
+  getNotifications(utilisateur: string, options?: SendOptions): Promise<AppNotification[]> {
+    const query = toQueryString({ utilisateur, _sort: 'date', _order: 'desc' })
+    return request<AppNotification[]>(`/notifications${query}`, options)
+  },
+
+  createNotification(payload: AppNotificationInput, options?: SendOptions): Promise<AppNotification> {
+    return request<AppNotification>('/notifications', { ...options, method: 'POST', body: JSON.stringify(payload) })
+  },
+
+  markNotificationRead(id: number, options?: SendOptions): Promise<AppNotification> {
+    return request<AppNotification>(`/notifications/${id}`, { ...options, method: 'PATCH', body: JSON.stringify({ lue: true }) })
   }
 }

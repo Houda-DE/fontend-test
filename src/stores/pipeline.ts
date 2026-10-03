@@ -1,6 +1,7 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import { ApiError, api } from '../services/api'
+import { notifyAccounts } from '../composables/notifyAccounts'
 import { useCandidatesStore } from './candidates'
 import type { Candidature, Statut } from '../types'
 
@@ -71,6 +72,7 @@ export const usePipelineStore = defineStore('pipeline', () => {
     try {
       const updated = await api.updateCandidature(id, { statut })
       cards.value = cards.value.map(card => (card.id === id ? updated : card))
+      await notifyAccounts('statut-mis-a-jour', `Statut de la candidature #${id} mis à jour : ${statut}.`)
       return true
     } catch (exception) {
       cards.value = previousCards

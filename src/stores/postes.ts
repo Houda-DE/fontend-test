@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
+import { notifyAccounts } from '../composables/notifyAccounts'
 import type { Poste, PosteInput } from '../types'
 
 const API = import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
@@ -66,6 +67,7 @@ export const usePostesStore = defineStore('postes', () => {
     try {
       const created = await http<Poste>('/postes', { method: 'POST', body: JSON.stringify(payload) })
       postes.value.push(created)
+      await notifyAccounts('nouveau-poste', `Nouveau poste publié : ${created.titre}.`)
       return created
     } catch (e) {
       actionError.value = e instanceof Error ? e.message : 'Erreur inconnue'

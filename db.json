@@ -4,7 +4,7 @@
       "id": 1,
       "nom": "Sophie Martin",
       "poste": "Développeur Full Stack",
-      "statut": "En attente",
+      "statut": "Entretien RH",
       "competences": [
         "Vue.js",
         "Node.js",
@@ -177,7 +177,7 @@
       "id": 7,
       "nom": "Julie Girard",
       "poste": "Développeur Vue.js",
-      "statut": "Entretien RH",
+      "statut": "Entretien technique",
       "competences": [
         "Vue.js",
         "Vuex",
@@ -206,7 +206,7 @@
       "id": 8,
       "nom": "Alexandre Roux",
       "poste": "Développeur Full Stack",
-      "statut": "En attente",
+      "statut": "Entretien RH",
       "competences": [
         "Vue.js",
         "Node.js",
@@ -285,7 +285,7 @@
       "id": 11,
       "nom": "Chloé Blanchard",
       "poste": "Développeur Full Stack",
-      "statut": "En attente",
+      "statut": "Entretien RH",
       "competences": [
         "Vue.js",
         "Python",
@@ -307,7 +307,7 @@
       "id": 12,
       "nom": "Maxime Garnier",
       "poste": "Développeur Frontend",
-      "statut": "Entretien RH",
+      "statut": "Entretien technique",
       "competences": [
         "Vue.js",
         "React",
@@ -396,6 +396,14 @@
         "Node.js",
         "Base de données"
       ]
+    },
+    {
+      "titre": "test",
+      "description": "test",
+      "competencesRequises": [
+        "Vue.js"
+      ],
+      "id": 4
     }
   ],
   "competences": [
@@ -448,6 +456,80 @@
       "id": 10,
       "nom": "TailwindCSS",
       "categorie": "CSS Framework"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "utilisateur": "marie",
+      "type": "statut-mis-a-jour",
+      "message": "Statut de la candidature #3 mis à jour : Accepté.",
+      "date": "2024-01-23T14:05:00Z",
+      "lue": true
+    },
+    {
+      "id": 2,
+      "utilisateur": "paul",
+      "type": "nouvelle-candidature",
+      "message": "Nouvelle candidature : Sophie Martin pour Développeur Full Stack.",
+      "date": "2024-01-15T10:35:00Z",
+      "lue": true
+    },
+    {
+      "id": 3,
+      "utilisateur": "lea",
+      "type": "nouveau-poste",
+      "message": "Nouveau poste publié : Développeur Vue.js.",
+      "date": "2024-01-22T11:30:00Z",
+      "lue": false
+    },
+    {
+      "utilisateur": "paul",
+      "type": "statut-mis-a-jour",
+      "message": "Statut de la candidature #8 mis à jour : Entretien RH.",
+      "date": "2026-10-03T09:31:55.551Z",
+      "lue": false,
+      "id": 4
+    },
+    {
+      "utilisateur": "lea",
+      "type": "statut-mis-a-jour",
+      "message": "Statut de la candidature #8 mis à jour : Entretien RH.",
+      "date": "2026-10-03T09:31:55.551Z",
+      "lue": false,
+      "id": 5
+    },
+    {
+      "utilisateur": "marie",
+      "type": "statut-mis-a-jour",
+      "message": "Statut de la candidature #1 mis à jour : Entretien RH.",
+      "date": "2026-10-03T09:33:03.947Z",
+      "lue": true,
+      "id": 6
+    },
+    {
+      "utilisateur": "lea",
+      "type": "statut-mis-a-jour",
+      "message": "Statut de la candidature #1 mis à jour : Entretien RH.",
+      "date": "2026-10-03T09:33:03.947Z",
+      "lue": false,
+      "id": 7
+    },
+    {
+      "utilisateur": "paul",
+      "type": "nouveau-poste",
+      "message": "Nouveau poste publié : test.",
+      "date": "2026-10-03T09:34:16.219Z",
+      "lue": false,
+      "id": 8
+    },
+    {
+      "utilisateur": "lea",
+      "type": "nouveau-poste",
+      "message": "Nouveau poste publié : test.",
+      "date": "2026-10-03T09:34:16.219Z",
+      "lue": false,
+      "id": 9
     }
   ]
 }

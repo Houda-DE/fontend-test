@@ -1,6 +1,7 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import { ApiError, api } from '../services/api'
+import { notifyAccounts } from '../composables/notifyAccounts'
 import type { Candidature, CandidatureInput, CandidatureQuery, Competence, Filters, Poste, Statut } from '../types'
 
 const FILTER_KEY = 'talentflow-filters'
@@ -193,6 +194,9 @@ export const useCandidatesStore = defineStore('candidates', () => {
     actionError.value = ''
     try {
       replaceCandidate(await api.updateCandidature(id, changes))
+      if ('statut' in changes) {
+        await notifyAccounts('statut-mis-a-jour', `Statut de la candidature #${id} mis à jour : ${changes.statut}.`)
+      }
       return true
     } catch (error) {
       candidates.value = previousList
@@ -210,6 +214,7 @@ export const useCandidatesStore = defineStore('candidates', () => {
     try {
       const created = await api.createCandidature(payload)
       await fetchCandidates()
+      await notifyAccounts('nouvelle-candidature', `Nouvelle candidature : ${payload.nom} pour ${payload.poste}.`)
       return created
     } catch (error) {
       actionError.value = message(error, 'La création a échoué.')
